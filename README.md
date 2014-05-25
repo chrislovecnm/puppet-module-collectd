@@ -454,10 +454,10 @@ class {'collectd::plugin::snmp':
 
 ```puppet
 class { 'collectd::plugin::statsd': 
-  host = $ipaddress_lo,
-  port = 8084,
-  deletecouter = true,
-  timerpercentile = 90.0,
+  host            => $ipaddress_lo,
+  port            => 8084,
+  deletecouter    => true,
+  timerpercentile => 90.0,
 }
 
 # using defaults
